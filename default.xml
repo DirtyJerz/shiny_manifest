@@ -8,6 +8,9 @@
   <remote  name="mw"
            fetch="https://github.com/MWisBest/" />
 
+  <remote  name="dj"
+           fetch="https://github.com/DirtyJerz/" />
+
   <default revision="refs/tags/android-5.0.0_r6"
            remote="aosp"
            sync-j="4" />
@@ -47,9 +50,9 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="mw" revision="aosp-5.0" />
-  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="mw" revision="aosp-5.0" />
+  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="dj" revision="lollipop" />
   <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="mw" revision="aosp-5.0" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.0" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="dj" revision="lollipop" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -321,7 +324,7 @@
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="aosp-5.0" groups="omap4" />
   <project path="kernel/amazon/bowser-common" name="android_kernel_amazon_bowser-common" remote="mw" revision="aosp-5.0" />
-  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.0" />
+  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="dj" revision="lollipop" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
@@ -432,5 +435,6 @@
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
   <project path="vendor/amazon" name="proprietary_vendor_amazon" remote="mw" revision="aosp-5.0" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.0" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.0" />
+  <project path="vendor/shiny" name="android_vendor_shiny" remote="dj" revision="lollipop" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="dj" revision="lollipop" />
 </manifest>
